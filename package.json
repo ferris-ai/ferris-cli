@@ -1,0 +1,41 @@
+{
+  "name": "@ferris-ai/cli",
+  "version": "0.1.0",
+  "description": "The ferris CLI: installs the project-state skill for Claude Code and runs its state engine (evidence-backed project state from emails, chat, meeting notes and files).",
+  "type": "module",
+  "bin": {
+    "ferris": "bin/ferris.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "skill",
+    "README.md",
+    "LICENSE",
+    "!**/__pycache__"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferris-ai/ferris-cli.git"
+  },
+  "homepage": "https://github.com/ferris-ai/ferris-cli#readme",
+  "bugs": {
+    "url": "https://github.com/ferris-ai/ferris-cli/issues"
+  },
+  "keywords": [
+    "claude-code",
+    "skill",
+    "project-state",
+    "ferris"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

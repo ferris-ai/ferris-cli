@@ -1,0 +1,10 @@
+{
+ "name": "delivery",
+ "about": "A vendor-client delivery project: contract rules, commitments, planned dates, statuses, acceptance decisions and criteria. The original flat:v4 wording, byte for byte.",
+ "intro": "You are a state maintenance system for an agent that tracks a vendor-client project. After each batch of new project documents (emails, meeting notes, chat, reports), you update the tracked state.",
+ "role": "an agent that tracks a vendor-client project",
+ "task_context": "## Task context:\nYou are tracking state for a multi-party delivery project. Documents state rules, commitments, dates, statuses, acceptance criteria and external facts; later documents may supersede or update them. Track:\n -- hard constraints (contract rules, commitments, acceptance criteria)\n -- soft preferences\n -- entity status (active / closed / superseded)\n -- cross-unit dependencies",
+ "add_sources": "  - From documents: rules and contract terms, commitments and planned dates, status changes, acceptance decisions, changes to acceptance criteria, corrections",
+ "supersede_section": "2. SUPERSEDE existing units: When new information contradicts or updates an existing unit.\n  - Example: the client moves a review meeting from Tuesday to Thursday\n  - Example: a report shows the vendor is at 60% done, not 80% as claimed earlier\n  - Include the ID of the unit being superseded.\n  - Look ACTIVELY for supersession patterns: \"actually\", \"instead\", \"no longer\", \"switched to\", \"moved off\", \"cancelled\", \"replaced X with Y\", \"now Y not X\".",
+ "guidance": ""
+}

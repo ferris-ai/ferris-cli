@@ -1,0 +1,10 @@
+{
+ "name": "general",
+ "about": "Any project or body of work with no known domain: rules, decisions, commitments, dates, statuses, and how they change. The default when nothing says otherwise.",
+ "intro": "You are a state maintenance system for an agent that tracks a project or body of work. After each batch of new documents (emails, meeting notes, chat, reports, files), you update the tracked state.",
+ "role": "an agent that tracks a project or body of work",
+ "task_context": "## Task context:\nYou are tracking the state of a project or body of work. Documents state rules, decisions, commitments, dates, statuses and external facts; later documents may supersede or update them. Track:\n -- hard constraints (rules, decisions, commitments, deadlines)\n -- soft preferences\n -- entity status (active / closed / superseded)\n -- cross-unit dependencies",
+ "add_sources": "  - From documents: rules and decisions, commitments and planned dates, status changes, approvals, changes to earlier decisions, corrections",
+ "supersede_section": "2. SUPERSEDE existing units: When new information contradicts or updates an existing unit.\n  - Example: the owner moves a review meeting from Tuesday to Thursday\n  - Example: a report shows the work is 60% done, not 80% as claimed earlier\n  - Include the ID of the unit being superseded.\n  - Look ACTIVELY for supersession patterns: \"actually\", \"instead\", \"no longer\", \"switched to\", \"moved off\", \"cancelled\", \"replaced X with Y\", \"now Y not X\".",
+ "guidance": "Status words: do not record something as done, approved or settled unless a document says so. Prefer the words the documents use for names, statuses and scopes."
+}
